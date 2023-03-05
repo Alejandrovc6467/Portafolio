@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}    
+
+:root {
+    --whiteColor-text:  rgba(240, 248, 255, 0.863);
+}
+
+
+/*MODiFICACIONES AL SCROLL BAR ORIGINAL*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Toda la linea */
+::-webkit-scrollbar-track {
+    background: #00000000;
+}
+   
+/* indicador */
+::-webkit-scrollbar-thumb {
+background: rgba(0, 0, 0, 0.250); 
+border-radius: 10px;   
+}
+  
+/* indicador hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(67, 93, 114, 0.574); 
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url(../images/fondo.jpg) ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
