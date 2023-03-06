@@ -56,7 +56,7 @@ footer p {
 }
 
 .nameDesigned {
-    color: var(--whiteColor-text);
+    color: white;
     font-style: italic;
     font-family: 'Anton', sans-serif;
     letter-spacing: 0.5PX;

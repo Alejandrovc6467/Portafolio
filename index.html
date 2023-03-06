@@ -13,6 +13,7 @@
         <!--styles-->
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/sections.css">
         <link rel="stylesheet" href="css/footer.css">
         <!--Fonts-->
@@ -29,7 +30,7 @@
        
         <nav class="header_nav">
             <div class="header_nav_logo"><a href="index.php"><span style="--item:1">A</span><span style="--item:2">L</span><span style="--item:3">E</span><span style="--item:4">J</span><span style="--item:5">A</span><span style="--item:6">N</span><span style="--item:7">D</span><span style="--item:8">R</span><span style="--item:9">O</span></a></div>
-           <button class="header_nav_toggle"><i class="fas fa-bars"></i></button>
+            <button class="header_nav_toggle"><i class="fas fa-bars"></i></button>
             <div class="header_nav_menu">
                 <a href="#home" onclick="x()">Home</a>
                 <a href="#sobreMi">Sobre mí</a>
@@ -47,31 +48,84 @@
     <section class="home" id="home">
 
         <div class="home_socialLinks">
-            <a href="https://www.linkedin.com/in/luisalejandrovasquezcordero" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Alejandrovc6467" target="_blank" ><i class="fa-brands fa-square-github"></i></a>
-            <a href="https://www.instagram.com/alejandrovc177/?hl=es-la" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+            <div class="container_home_socialLinks">
+                <a href="https://www.linkedin.com/in/luisalejandrovasquezcordero" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Alejandrovc6467" target="_blank" ><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.instagram.com/alejandrovc177/?hl=es-la" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
         </div>
 
         <div class="home_info">
-            <p class="home_text_1">Hola! Soy</p>
-            <p class="home_text_2">Alejandro Vasquez</p>
-            <p class="home_text_3">Desarrollador web Front-end</p>
+            
+            <div class="container_home_info">
+                <p class="home_text_1">Hola! Soy</p>
+                <p class="home_text_2">Alejandro Vasquez</p>
+                <p class="home_text_3">Desarrollador web Front-end</p>
+                <p class="home_text_4">Estudiante de Estadistica y programación enfocada al Desarrollo Web Frontend. Como persona amante a los diseños intuitivos y estéticamente agradables busco crear proyectos que brinden la mejor experiencia para el usuario.</p>
+                <div class="home_info_contaniner_buttoms">
+                    <button class="cv_button">Descargar CV</button>
+                    <button class="contact_button">Contacto</button>
+                </div>
+            </div>
+           
         </div>
 
         <picture class="home_picture">
-            <img src="./images/perfilp.jpg" alt="image perfil">
+            <img src="./images/perfil.jpg" alt="image perfil" class="home_picture_image">
         </picture>
       
     </section>
 
-
-
     <section class="sobreMi" id="sobreMi">
-        <p>sobremi</p>
+        <div class="sobreMi_container">
+            <h1 class="sobreMi_text_1">Sobre mí</h1>
+            <p class="sobreMi_text_3">Soy estudiante del pregrado de Estadística y estudiante autodidacta de Desarrollo Web enfocado en programación Frontend. Aspiro conseguir empleo en el mundo del Desarrollo Web, adquirir experiencia, nuevos conocimientos y fortalecer mi vida profesional.Soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsable y proactiva, me gusta aprender de los demás y superarme continuamente.</p>
+        </div>
     </section>
 
     <section class="habilidaes" id="habilidades">
-        <p>habilidades</p>
+        <h1 class="habilidades_text_1">Habilidades</h1>
+        <div class="cards_container--habilidades">
+            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                <img src="./images/icon-html.png" alt="Icono de HTML">
+                <p>HTML 5</p>
+            </div>
+            
+            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                <img src="./images/icon-css.png" alt="Icono de CSS">
+                <p>CSS 3</p>
+            </div>
+
+            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+                <img src="./images/icon-js.png" alt="Icono de JavaScript">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                <img src="./images/icon-python.png" alt="Icono de Java">
+                <p>Python</p>
+            </div>
+
+            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                <img src="./images/icon-java.png" alt="Icono de Tailwind">
+                <p>Java</p>
+            </div>
+
+            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                <img src="./images/icon-git.png" alt="Icono de Git">
+                <p>Git</p>
+            </div>
+            
+            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+                <img src="./images/icon-github.png" alt="Icono de GitHub">
+                <p>Github</p>
+            </div>
+
+            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                <img src="./images/icon-php.png" alt="Icono de Trello">
+                <p>PHP</p>
+            </div>
+        </div>
     </section>
 
     <section class="formacion" id="formacion">
@@ -93,9 +147,9 @@
         </div>
 
         <div class="footer_redes">
-            <a href="https://www.facebook.com/alejandro.corderoleon"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
-            <a href="https://www.instagram.com/alejandrovc177/?hl=es-la"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            <a href="https://api.whatsapp.com/send?phone=+50664670196&text=Hola, visité tu sitio web! :)"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              <a href="https://www.linkedin.com/in/luisalejandrovasquezcordero" target="_blank" ><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="https://github.com/Alejandrovc6467" target="_blank" ><i class="fa-brands fa-square-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/alejandrovc177/?hl=es-la" target="_blank" ><i class="fa-brands fa-square-instagram"></i> Instagram</a>
         </div>
                    
         <div class="footer_disigned">

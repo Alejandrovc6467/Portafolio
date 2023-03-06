@@ -32,6 +32,12 @@
     padding-left: 25px;
 }
 
+.header_nav_logo:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+
 /*Logo animation*/
 .header_nav_logo span {
     display: inline-block;
@@ -98,7 +104,7 @@
 
 
 /*media query*/
-@media all and (max-width:785px) {
+@media all and (max-width:980px) {
 
     /*cuando tengo menos de 785 hago las configuraciones pero lo mantengo oculto al lado derecho*/
    .header_nav_menu{
@@ -107,7 +113,7 @@
         width: 100%;
         position: fixed;/*para que la pos no dependa del contendor donde se encuentr*/
         top: 59px;
-        left: 0;
+        
         z-index: 0;
         height: calc(100% - 59px);/*menis 60px del heigt inicial de mi header*/
         overflow-y: auto;/*un scroll por si hay muchos items y el dispositivo es muy pequenio*/
@@ -117,11 +123,12 @@
         
 
         left: 100%;/*cuando no este activo, posicionelo todo a la derecho, para que no se vea*/
-        transition: left 0.6s;/*hagame una transition cuando el left se modifique*/
+        /*transition: left 0.6s;/*hagame una transition cuando el left se modifique*/
     }
 
     .header_nav_menu_visible{
         left: 0;/*cunado presione el boton llamo a este clase en js, y posiciono el nav donde va*/
+        transition: left 0.6s;/*hagame una transition cuando el left se modifique*/
     }  
     
     .header_nav_toggle{
