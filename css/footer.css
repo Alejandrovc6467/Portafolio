@@ -9,7 +9,6 @@ footer {
     height: 10vh;
 }
 
-
 footer p {
     color: var(--whiteColor-text);
 }
@@ -63,9 +62,7 @@ footer p {
 }
 
 
-
 @media all and (max-width:640px) {
-
 
     footer {
         flex-flow: column nowrap;

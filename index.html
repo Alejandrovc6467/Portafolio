@@ -9,11 +9,13 @@
         <meta name="robots" content="index,follow">
         <link rel="shortcut icon" href="images/avIcon.png?78" type="image/x-icon">
         <title>Alejandro Vasquez</title>
-        
+
+        <!--Style animation-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--styles-->
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/home.css?98">
         <link rel="stylesheet" href="css/sections.css">
         <link rel="stylesheet" href="css/footer.css">
         <!--Fonts-->
@@ -32,7 +34,7 @@
             <div class="header_nav_logo"><a href="index.php"><span style="--item:1">A</span><span style="--item:2">L</span><span style="--item:3">E</span><span style="--item:4">J</span><span style="--item:5">A</span><span style="--item:6">N</span><span style="--item:7">D</span><span style="--item:8">R</span><span style="--item:9">O</span></a></div>
             <button class="header_nav_toggle"><i class="fas fa-bars"></i></button>
             <div class="header_nav_menu">
-                <a href="#home" onclick="x()">Home</a>
+                <a href="#home">Home</a>
                 <a href="#sobreMi">Sobre mí</a>
                 <a href="#habilidades">Habilidades</a>
                 <a href="#formacion">Formación</a>
@@ -44,8 +46,7 @@
     </header>
 
 
-   
-    <section class="home" id="home">
+    <section class="home" id="home" data-aos="fade-right" data-aos-duration="1000">
 
         <div class="home_socialLinks">
             <div class="container_home_socialLinks">
@@ -61,14 +62,10 @@
                 <p class="home_text_1">Hola! Soy</p>
                 <p class="home_text_2">Alejandro Vasquez</p>
                 <p class="home_text_3">Desarrollador web Front-end</p>
-                <p class="home_text_4">Estudiante de Estadistica y programación enfocada al Desarrollo Web Frontend. Como persona amante a los diseños intuitivos y estéticamente agradables busco crear proyectos que brinden la mejor experiencia para el usuario.</p>
+                <p class="home_text_4">Estudiante de Informática Empresarial en la Universidad de Costa Rica. Apasionado por los diseños intuitivos y estéticamente agradables, busco crear proyectos que brinden la mejor experiencia para el usuario.</p>
                 <div class="home_info_contaniner_buttoms">
-                    <a href="https://www.linkedin.com/in/luisalejandrovasquezcordero" target="_blank">
-                        <button class="cv_button">Descargar CV</button>
-                    </a>
-                    <a href="#contacto">
-                        <button class="contact_button">Contacto</button>
-                    </a>
+                    <a href="https://www.linkedin.com/in/luisalejandrovasquezcordero" target="_blank"><button class="cv_button">Descargar CV</button></a>
+                    <a href="#contacto"><button class="contact_button">Contacto</button></a>
                 </div>
             </div>
            
@@ -83,49 +80,49 @@
     <section class="sobreMi" id="sobreMi">
         <div class="sobreMi_container">
             <h1 class="sobreMi_text_1">Sobre mí</h1>
-            <p class="sobreMi_text_3">Soy estudiante del pregrado de Estadística y estudiante autodidacta de Desarrollo Web enfocado en programación Frontend. Aspiro conseguir empleo en el mundo del Desarrollo Web, adquirir experiencia, nuevos conocimientos y fortalecer mi vida profesional.Soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsable y proactiva, me gusta aprender de los demás y superarme continuamente.</p>
+            <p class="sobreMi_text_3" data-aos="fade-right" data-aos-duration="1000">Soy estudiante de Informática Empresarial en la Universidad de Costa Rica UCR y estudiante autodidacta de Desarrollo Web enfocado en programación Frontend. Aspiro a conseguir empleo en el mundo del Desarrollo Web, adquirir experiencia, nuevos conocimientos y fortalecer mi vida profesional. Soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsable y proactiva, me gusta aprender de los demás y superarme continuamente.</p>
         </div>
     </section>
 
     <section class="habilidades" id="habilidades">
         <h1 class="habilidades_text_1">Habilidades</h1>
-        <div class="cards_container--habilidades">
-            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+        <div class="cards_container_habilidades">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/icon-html.png" alt="Icono de HTML">
                 <p>HTML 5</p>
             </div>
             
-            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/icon-css.png" alt="Icono de CSS">
                 <p>CSS 3</p>
             </div>
 
-            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/icon-js.png" alt="Icono de JavaScript">
                 <p>JavaScript</p>
             </div>
 
-            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/icon-python.png" alt="Icono de Java">
                 <p>Python</p>
             </div>
 
-            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/icon-java.png" alt="Icono de Tailwind">
                 <p>Java</p>
             </div>
 
-            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/icon-git.png" alt="Icono de Git">
                 <p>Git</p>
             </div>
             
-            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/icon-github.png" alt="Icono de GitHub">
                 <p>Github</p>
             </div>
 
-            <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/icon-php.png" alt="Icono de Trello">
                 <p>PHP</p>
             </div>
@@ -133,30 +130,30 @@
     </section>
 
     <section class="formacion" id="formacion">
-        <h1 class="formacion_text_1" data-section="formacion" data-value="title">Formación</h1>
+        <h1 class="formacion_text_1">Formación</h1>
 
-        <div class="cards_container--formacion">
-            <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+        <div class="cards_container_formacion">
+            <div class="cards_formacion" data-aos="fade-down" data-aos-duration="1000">
                 <img class="logo-one" src="./images/logo-one.png" alt="Logo - ONE">
                 <div class="container_texto--formacion">
-                    <p data-section="formacion" data-value="formacion1">Desarrollo Web Front-end</p>
-                    <p data-section="formacion" data-value="tiempo-formacion1">2022 - 2023</p>
+                    <p>Desarrollo Web Front-end</p>
+                    <p>2022 - 2023</p>
                 </div>
             </div>
 
-            <div class="cards--formacion" data-aos="fade-up" data-aos-duration="500">
+            <div class="cards_formacion" data-aos="fade-up" data-aos-duration="1000">
                 <img class="logo-ucr" src="./images/logo-ucr.png" alt="Logo - UCR: Universidad de Costa Rica">
                 <div class="container_texto--formacion">
-                    <p data-section="formacion" data-value="formacion2">Informática Empresarial</p>
-                    <p data-section="formacion" data-value="tiempo-formacion2">2020 - En curso</p>
+                    <p>Informática Empresarial</p>
+                    <p>2020 - En curso</p>
                 </div>
             </div>
 
-            <div class="cards--formacion" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+            <div class="cards_formacion" data-aos="fade-down"  data-aos-duration="1000">
                 <img class="logo-one" src="./images/logo-one.png" alt="Logo - ONE">
-                <div class="container_texto--formacion">
-                    <p data-section="formacion" data-value="formacion3">Desarrollo Web Front-end</p>
-                    <p data-section="formacion" data-value="tiempo-formacion3">2022 - 2023</p>
+                <div class="container_texto_formacion">
+                    <p>Desarrollo Web Front-end</p>
+                    <p>2022 - 2023</p>
                 </div>
             </div>
         </div>
@@ -165,68 +162,68 @@
     </section>
 
     <section class="proyectos" id="proyectos">
-        <h1 class="proyectos_text_1" data-section="proyectos" data-value="title">Proyectos</h1>
+        <h1 class="proyectos_text_1">Proyectos</h1>
 
-        <div class="cards_container--proyectos">
+        <div class="cards_container_proyectos">
 
-            <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+            <div class="cards_proyectos" data-aos="zoom-in-up" data-aos-duration="1000">
                 
-                <div class="container_imgCard--proyectos">
-                    <img src="./images/cap-juegoAhorcado.png" alt="Proyecto: Juego del ahorcado">
+                <div class="container_imgCard_proyectos">
+                    <img src="./images/image-encriptador.jpg" alt="Proyecto: Juego del ahorcado">
                 </div>
 
-                <div class="container_textCard--proyectos">
-                    <h2 data-section="proyectos" data-value="title-proyecto1">Juego del Ahorcado</h2>
-                    <p data-section="proyectos" data-value="info-proyecto1">Un juego donde el usuario debe adivinar la palabra secreta con un cierto número de oportunidades. La palabra se escoge de forma aleatoria por el programa y el usuario perderá en el momento en que la horca se complete.</p>
+                <div class="container_textCard_proyectos">
+                    <h2>Encriptador de Texto</h2>
+                    <p>Un ecriptador donde el usuario puede escribir un texto y el encriptador lo codifica con llaves ya programadas. El encriptador también permite desencriptar el texto.</p>
                 </div>
 
-                <div class="container_btn--proyectos">
-                    <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                <div class="container_btn_proyectos">
+                    <a href="https://alejandrovc6467.github.io/EncriptadorDeTexto/" target="_blank">
                         <button class="btn_proyectos demo"><i class="fa-solid fa-eye"></i> Demo</button>
                     </a>
-                    <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                    <a href="https://github.com/Alejandrovc6467/EncriptadorDeTexto" target="_blank">
                         <button class="btn_proyectos repo"><i class="fa-brands fa-github"></i> Repo</button>
                     </a>
                 </div>
             </div>
 
-            <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+            <div class="cards_proyectos" data-aos="zoom-in-up" data-aos-duration="1000">
                 
-                <div class="container_imgCard--proyectos">
-                    <img src="./images/cap-juegoAhorcado.png" alt="Proyecto: Juego del ahorcado">
+                <div class="container_imgCard_proyectos">
+                    <img src="./images/mensajes-anonimos.jpg" alt="Proyecto: Juego del ahorcado">
                 </div>
                 
-                <div class="container_textCard--proyectos text-portafolio">
-                    <h2 data-section="proyectos" data-value="title-proyecto2">Portafolio</h2>
-                    <p data-section="proyectos" data-value="info-proyecto2">Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.</p>
+                <div class="container_textCard_proyectos">
+                    <h2>Mi web Mensajes Anónimos</h2>
+                    <p>Mi web personal de mensajes anónimos, es un sitio donde puedes enviarme un mensaje y este será almacenado en una base de datos MySQL para luego mostrarlo en un chat dentro del sitio, programado en el lenguaje PHP.</p>
                 </div>
 
-                <div class="container_btn--proyectos">
-                    <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                <div class="container_btn_proyectos">
+                    <a href="http://alejandrovc.epizy.com/index.php" target="_blank">
                         <button class="btn_proyectos demo"><i class="fa-solid fa-eye"></i> Demo</button>
                     </a>
-                    <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                    <a href="https://github.com/Alejandrovc6467/Mi-web-mensajes-anonimos" target="_blank">
                         <button class="btn_proyectos repo"><i class="fa-brands fa-github"></i> Repo</button>
                     </a>
                 </div>
             </div>
 
-            <div class="cards--proyectos" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+            <div class="cards_proyectos" data-aos="zoom-in-up" data-aos-duration="1000">
                 
-                    <div class="container_imgCard--proyectos">
-                        <img src="./images/cap-juegoAhorcado.png" alt="Proyecto: Juego del ahorcado">
+                    <div class="container_imgCard_proyectos">
+                        <img src="./images/image-sistema-ganadero.png" alt="Proyecto: Juego del ahorcado">
                     </div>
 
-                    <div class="container_textCard--proyectos">
-                        <h2 data-section="proyectos" data-value="title-proyecto3">Encriptador de Texto</h2>
-                        <p data-section="proyectos" data-value="info-proyecto3">Un ecriptador donde el usuario puede escribir un texto y el encriptador lo codifica con llaves ya programadas. El encriptador también permite desencriptar el texto.</p>
+                    <div class="container_textCard_proyectos">
+                        <h2>Sistema de Control Ganadero</h2>
+                        <p>Proyecto realizado con fines académicos para la Universidad de Costa Rica, programado con PHP. Quieres ingresar y hechar un vistazo? estos son los datos de ingreso.<br>user: "Alejandro" password: "123456" </p>
                     </div>
 
-                    <div class="container_btn--proyectos">
-                        <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                    <div class="container_btn_proyectos">
+                        <a href="http://miprimerpaginaalejandrovc.000webhostapp.com/index.php" target="_blank">
                             <button class="btn_proyectos demo"><i class="fa-solid fa-eye"></i> Demo</button>
                         </a>
-                        <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                        <a href="http://miprimerpaginaalejandrovc.000webhostapp.com/index.php" target="_blank">
                             <button class="btn_proyectos repo"><i class="fa-brands fa-github"></i> Repo</button>
                         </a>
                     </div>
@@ -238,15 +235,16 @@
 
 
     <section class="contacto" id="contacto">
-        <h1 class="contacto_text_1" data-section="contacto" data-value="title">Contacto</h1>
+        <h1 class="contacto_text_1">Contacto</h1>
 
         <form class="form_contact" id='form' method='post' name='contacto-portafolio'><input type='hidden' name='form-name' value='contacto-portafolio' />
+            <p>Completa el formulario y me pondré en contacto contigo lo antes posible.</p>
             <input id="nombre" type="text" name="name" placeholder="Nombre | Name" required>
             <input id="email" type="email" name="email" placeholder="E-mail" required>
             <input id="asunto" type="text" name="affair" placeholder="Asunto | Subject" required>
             <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje | Message" required></textarea>
 
-            <div class="btn_form--contacto">
+            <div class="btn_form_contacto">
                 <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
             </div>
         </form>
@@ -270,8 +268,13 @@
         </div>
     </footer>
 
+    <!-- Js animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-    <!-- link javaScript -->
+    <!-- Js mine -->
     <script src="scripts/script.js"></script>
         
 </body>

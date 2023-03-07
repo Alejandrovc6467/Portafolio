@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-.cards_container--habilidades{
+.cards_container_habilidades{
     display: flex;
     flex-wrap: wrap;
     padding: 0px 25%;
@@ -51,7 +51,7 @@
     text-align: center;
 }
 
-.cards--habilidades{
+.cards_habilidades{
     background-color: rgba(0, 0, 0, 0.179);
     backdrop-filter: blur(25px);
     border-radius: 10px;
@@ -59,19 +59,19 @@
     margin: 10px 20px 10px 20px;
 }
 
-.cards--habilidades img {
+.cards_habilidades img {
     width: 6rem;
     filter: grayscale(100%) ;
     padding-top: 10px; 
 }
 
-.cards--habilidades img:hover {
+.cards_habilidades img:hover {
     filter: grayscale(0%);
     transition: 1s;
     transform: scale(1.1);
 }
 
-.cards--habilidades p {
+.cards_habilidades p {
     color: white;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -96,7 +96,7 @@
     text-align: center;
 }
 
-.cards_container--formacion{
+.cards_container_formacion{
     display: flex;
     flex-wrap: wrap;
     /*padding: 35px 20%;/**/
@@ -104,7 +104,7 @@
     text-align: center;
 }
 
-.cards--formacion{
+.cards_formacion{
     background-color: rgba(0, 0, 0, 0.179);
     border-radius: 10px;
     width: 250px;/*25% , 16rem*/
@@ -113,7 +113,7 @@
    
 }
 
-.cards--formacion img {
+.cards_formacion img {
     filter: grayscale(100%);
     padding-bottom: 20px;
 }
@@ -126,13 +126,13 @@
     width: 80%;
 }
 
-.cards--formacion img:hover {
+.cards_formacion img:hover {
     filter: grayscale(0%);
     transition: 1s;
     transform: scale(1.1);
 }
 
-.cards--formacion p:nth-child(1) {
+.cards_formacion p:nth-child(1) {
     color: #0059a6;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .1rem;
@@ -141,7 +141,7 @@
     margin-bottom: 10px;
 }
 
-.cards--formacion p:nth-child(2) {
+.cards_formacion p:nth-child(2) {
     color: rgba(240, 248, 255, 0.636);
     font-family:  'Open Sans', sans-serif;
     letter-spacing: .1rem;
@@ -162,13 +162,13 @@
     text-align: center;
 }
 
-.cards_container--proyectos {
+.cards_container_proyectos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.cards--proyectos {
+.cards_proyectos {
     background-color: rgba(0, 0, 0, 0.179);
     border-radius: 20px;
     width: 350px;
@@ -176,46 +176,46 @@
     margin: 20px;
 }
 
-.container_imgCard--proyectos{
+.container_imgCard_proyectos{
     width: 100%;
     height: 45%;
 }
 
-.cards--proyectos img {
+.cards_proyectos img {
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
-    filter: grayscale(100%) opacity(75%);
+    filter: grayscale(50%) opacity(70%);
 }
 
-.cards--proyectos img:hover {
+.cards_proyectos img:hover {
   filter: grayscale(0%);
   transform: scale(0.98);
   border-radius: 20px 20px 20px 20px;
   transition: 0.6s;
 }
 
-.container_textCard--proyectos{
+.container_textCard_proyectos{
     padding: 10px 15px;
     width: 100%;
     height: 45%;
 }
 
-.container_textCard--proyectos h2 {
+.container_textCard_proyectos h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color: white;
     font-weight: 400;
 }
 
-.container_textCard--proyectos p {
+.container_textCard_proyectos p {
     color: rgba(240, 248, 255, 0.636);
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     margin-top: 1rem;
 }
 
-.container_btn--proyectos {
+.container_btn_proyectos {
     height: 10%;
     width: 100%;
     border-radius: 0 0 20px 20px;
@@ -252,66 +252,104 @@
 }
 
 .repo{
-    background-color: #0059a6;
+    background-color: #0059a698;
     border: none;
 }
 
 
-
-
-
-/*contacto *****************************************/
+/*contacto ********************************************/
 .contacto{
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.179);
     padding: 50px 0;
     display: flex;
     flex-direction: column;
-   
-    
+    align-items: center; 
 }
 
-.contacto_text_1{
-
+.contacto_text_1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     color: white;
-    text-align: center;
 }
 
 .form_contact{
-    background: green;
+    background-color: rgba(0, 0, 0, 0.179);
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
-    
+    width: 90%;
+    max-width: 750px;
+    padding: 25px;
+}
+
+.form_contact p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    color: white; 
+}
+
+.form_contact input, textarea {
+    margin-bottom: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: 2px solid #088cff55;
+    color: rgba(255, 255, 255, 0.714);
+    resize: vertical;
+}
+
+.form_contact input:hover, textarea:hover {
+    transform: scale(1.009);
+    transition: 0.4s;
+}
+
+.btn_form_contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_form_contacto button{
+    margin-top: 15px;
+    width: 200px;
+    background-color: #0059a698;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.btn_form_contacto button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition:  all .6s ease;
 }
 
 
+.form_contact textarea::-webkit-scrollbar {
+    width: 4px;
+    padding: 5px 0px;
+}
 
+.form_contact textarea::-webkit-scrollbar-track {
+    background-color: #000000af;
+    margin: 8px 0;
+    border-radius: 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form_contact textarea::-webkit-scrollbar-thumb {
+    background-color: #0059a67b;
+    border-radius: 5px;
+}
 
 
 
@@ -335,13 +373,18 @@
 
 
     /*habilidades*/
-    .cards_container--habilidades{
+    .cards_container_habilidades{
         padding: 35px 0%;/**/
     }
 
     /*sobre mi*/
     .sobreMi_container{
         padding: 50px 5%;
+    }
+
+    /*proyectos*/
+    .container_textCard_proyectos p {
+        font-size: 10px;
     }
 
 }

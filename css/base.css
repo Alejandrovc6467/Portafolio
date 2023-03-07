@@ -8,9 +8,7 @@
     --whiteColor-text:  rgba(240, 248, 255, 0.863);
 }
 
-
 /*MODiFICACIONES AL SCROLL BAR ORIGINAL*/
-
 html::-webkit-scrollbar {
     width: 4px;
 }
@@ -23,8 +21,6 @@ html::-webkit-scrollbar-thumb {
     background-color:#0059a67b;
     border-radius: 5px;
 }
-
-
 
 body{
     font-family: 'Montserrat', sans-serif;
