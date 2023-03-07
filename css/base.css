@@ -8,30 +8,19 @@
     --whiteColor-text:  rgba(240, 248, 255, 0.863);
 }
 
-
 /*MODiFICACIONES AL SCROLL BAR ORIGINAL*/
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-  
-/* Toda la linea */
-::-webkit-scrollbar-track {
-    background: #00000000;
-}
-   
-/* indicador */
-::-webkit-scrollbar-thumb {
-background: rgba(0, 0, 0, 0.250); 
-border-radius: 10px;   
-}
-  
-/* indicador hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(67, 93, 114, 0.574); 
+html::-webkit-scrollbar {
+    width: 4px;
 }
 
+html::-webkit-scrollbar-track {
+    background-color: rgb(4, 4, 4);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color:#0059a67b;
+    border-radius: 5px;
+}
 
 body{
     font-family: 'Montserrat', sans-serif;

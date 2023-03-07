@@ -1,91 +1,390 @@
-:root {
-    --green: #106649;
-    --PT-Sans: 'PT Sans', sans-serif; 
-    --Open-Sans: 'Open Sans', sans-serif; 
-}
 
-
-/*home **************************************/
-.home{
-    background-color: var(--green);
-    margin-top: 80px;/**/
-    height: calc(100vh - 80px);/*mnos 80 del margin*/
+/*sobre mi ****************************/
+.sobreMi{
+    background-color: rgba(0, 0, 0, 0.179);
+    color: white;
+    text-align: center;
     width: 100%;
+    height: auto;  
+}
 
-    display: flex;
+.sobreMi_container{
+    padding: 50px 20%;
+}
+
+.sobreMi_text_1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.sobreMi_text_3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(240, 248, 255, 0.636);
+    letter-spacing: 1px;
 }
 
 
-.home_socialLinks{
-    background-color: red;
-    width: 5%;
+/*habilidades **************************/
+.habilidades{
+    padding-bottom: 35px;
+    padding: 50px 0;
+}
+
+.habilidades_text_1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.cards_container_habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 25%;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards_habilidades{
+    background-color: rgba(0, 0, 0, 0.179);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    width: 8rem;
+    margin: 10px 20px 10px 20px;
+}
+
+.cards_habilidades img {
+    width: 6rem;
+    filter: grayscale(100%) ;
+    padding-top: 10px; 
+}
+
+.cards_habilidades img:hover {
+    filter: grayscale(0%);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.cards_habilidades p {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1rem;
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+}
+
+
+/*formacion **********************************/
+.formacion{
+    background-color: rgba(0, 0, 0, 0.179);
+    padding: 50px 0;
+}
+
+.formacion_text_1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.cards_container_formacion{
+    display: flex;
+    flex-wrap: wrap;
+    /*padding: 35px 20%;/**/
+    justify-content: center;
+    text-align: center;
+}
+
+.cards_formacion{
+    background-color: rgba(0, 0, 0, 0.179);
+    border-radius: 10px;
+    width: 250px;/*25% , 16rem*/
+    margin: 10px 20px;
+    padding: 50px 20px;
+   
+}
+
+.cards_formacion img {
+    filter: grayscale(100%);
+    padding-bottom: 20px;
+}
+
+.logo-ucr{
+    width: 80%;
+}
+
+.logo-one{
+    width: 80%;
+}
+
+.cards_formacion img:hover {
+    filter: grayscale(0%);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.cards_formacion p:nth-child(1) {
+    color: #0059a6;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.cards_formacion p:nth-child(2) {
+    color: rgba(240, 248, 255, 0.636);
+    font-family:  'Open Sans', sans-serif;
+    letter-spacing: .1rem;
+    font-size: 0.75rem;
+}
+
+/* Proyectos *******************************/
+.proyectos {
+    padding: 50px 0;
+}
+
+.proyectos_text_1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.cards_container_proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards_proyectos {
+    background-color: rgba(0, 0, 0, 0.179);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+}
+
+.container_imgCard_proyectos{
+    width: 100%;
+    height: 45%;
+}
+
+.cards_proyectos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    filter: grayscale(50%) opacity(70%);
+}
+
+.cards_proyectos img:hover {
+  filter: grayscale(0%);
+  transform: scale(0.98);
+  border-radius: 20px 20px 20px 20px;
+  transition: 0.6s;
+}
+
+.container_textCard_proyectos{
+    padding: 10px 15px;
+    width: 100%;
+    height: 45%;
+}
+
+.container_textCard_proyectos h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.container_textCard_proyectos p {
+    color: rgba(240, 248, 255, 0.636);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+.container_btn_proyectos {
+    height: 10%;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.btn_proyectos{
+    font-family: var(--Open-Sans);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.942);
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    border-radius: 5rem;
+    padding: 5px 7px;
+    
+    width: 8rem;
+}
+
+
+.btn_proyectos:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.demo{
+    color: #0059a6;
+    border: 2px solid #0059a6;
+    background: transparent;
+    font-weight: bold;
+}
+
+.repo{
+    background-color: #0059a698;
+    border: none;
+}
+
+
+/*contacto ********************************************/
+.contacto{
+    background-color: rgba(0, 0, 0, 0.179);
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 25%;
-    font-size: 1.8rem;
+    align-items: center; 
 }
 
-.home_socialLinks a {
-    margin-bottom: 20px;
+.contacto_text_1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 30px;
     color: white;
 }
 
-.home_socialLinks a:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+.form_contact{
+    background-color: rgba(0, 0, 0, 0.179);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 750px;
+    padding: 25px;
 }
 
-.home_info{
-    background-color: pink;
-    width: 40%;
-
-}
-
-.home_text_1{
-    font-family: var(--Open-Sans);
-    font-weight: 700;/**/
-    font-size: 2rem;
-    color: white;
-}
-
-.home_text_2{
-    font-family: var(--PT-Sans);
-    font-weight: 700;/**/
-    font-size: 3.2rem;/**/
-    color: white;
-}
-
-.home_text_3{
-    font-family: var(--Open-Sans);
-    font-weight: 500;/**/
+.form_contact p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    color: white; 
+}
+
+.form_contact input, textarea {
+    margin-bottom: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: 2px solid #088cff55;
+    color: rgba(255, 255, 255, 0.714);
+    resize: vertical;
+}
+
+.form_contact input:hover, textarea:hover {
+    transform: scale(1.009);
+    transition: 0.4s;
+}
+
+.btn_form_contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_form_contacto button{
+    margin-top: 15px;
+    width: 200px;
+    background-color: #0059a698;
+    border: none;
     color: white;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
-.home_picture{
-    background-color: yellow;
-    width: 55%;
+.btn_form_contacto button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition:  all .6s ease;
+}
 
+
+.form_contact textarea::-webkit-scrollbar {
+    width: 4px;
+    padding: 5px 0px;
+}
+
+.form_contact textarea::-webkit-scrollbar-track {
+    background-color: #000000af;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.form_contact textarea::-webkit-scrollbar-thumb {
+    background-color: #0059a67b;
+    border-radius: 5px;
 }
 
 
 
 
+/*media query*/
+@media all and (max-width:980px) {
+
+    /*sobre mi*/
+    .sobreMi_text_1{
+        font-size: 24px;
+    }
+    
+    .sobreMi_text_2{
+        font-size: 22px;/**/
+    }
+
+    .sobreMi_text_3{
+        font-size: 12px;
+        padding: 35px  7%;
+    }
 
 
+    /*habilidades*/
+    .cards_container_habilidades{
+        padding: 35px 0%;/**/
+    }
 
+    /*sobre mi*/
+    .sobreMi_container{
+        padding: 50px 5%;
+    }
 
+    /*proyectos*/
+    .container_textCard_proyectos p {
+        font-size: 10px;
+    }
 
-
-
-
-
-
-
-
-
-/*Sobre mi ******************************/
-.sobreMi{
-    background-color: blue;
 }
