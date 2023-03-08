@@ -109,26 +109,19 @@
     /*cuando tengo menos de 785 hago las configuraciones pero lo mantengo oculto al lado derecho*/
    .header_nav_menu{
         flex-direction: column;
-        padding: 20px 0;
         width: 100%;
         position: fixed;/*para que la pos no dependa del contendor donde se encuentr*/
         top: 59px;
-        
         z-index: 0;
-        height: calc(100% - 59px);/*menis 60px del heigt inicial de mi header*/
         overflow-y: auto;/*un scroll por si hay muchos items y el dispositivo es muy pequenio*/
-        
-        background-color: rgba(0, 0, 0, 0.514);
-        backdrop-filter: blur(25px);/**/
-        
-
+        height: 100%;
         left: 100%;/*cuando no este activo, posicionelo todo a la derecho, para que no se vea*/
-        /*transition: left 0.6s;/*hagame una transition cuando el left se modifique*/
+        /*transition: left 1s;/*hagame una transition cuando el left se modifique*/
     }
 
     .header_nav_menu_visible{
         left: 0;/*cunado presione el boton llamo a este clase en js, y posiciono el nav donde va*/
-        transition: left 0.6s;/*hagame una transition cuando el left se modifique*/
+        transition: left 1s;/*hagame una transition cuando el left se modifique*/
     }  
     
     .header_nav_toggle{
@@ -136,15 +129,13 @@
     }
 
     .header_nav_menu a {
-      margin: 0 0 25px 0;
+       margin: 20px;
+       font-size: 25px;
     }
-
 
     /*Este eso para controlar el tema del backdrop, es un detalle se llama en el js*/
     .header_new{
-        backdrop-filter: none;
-        box-shadow: none;
-        background-color: rgb(0, 0, 0);/**/
+        height: 100%;
     }
 
 }
