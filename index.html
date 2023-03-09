@@ -46,7 +46,7 @@
     </header>
 
 
-    <section class="home" id="home" data-aos="fade-right" data-aos-duration="1000">
+    <section class="home" id="home" data-aos="fade-right" data-aos-duration="1500">
 
         <div class="home_socialLinks">
             <div class="container_home_socialLinks">
@@ -64,7 +64,7 @@
                 <p class="home_text_3">Desarrollador web Front-end</p>
                 <p class="home_text_4">Estudiante de Informática Empresarial en la Universidad de Costa Rica. Apasionado por los diseños intuitivos y estéticamente agradables, busco crear proyectos que brinden la mejor experiencia para el usuario.</p>
                 <div class="home_info_contaniner_buttoms">
-                    <a href="https://www.linkedin.com/in/luisalejandrovasquezcordero" target="_blank"><button class="cv_button">Descargar CV</button></a>
+                    <a href="https://drive.google.com/file/d/1Q5_0KalSjp-6gPEFvr0mYx_6NfdPx8zM/view?usp=share_link" target="_blank"><button class="cv_button">Descargar CV</button></a>
                     <a href="#contacto"><button class="contact_button">Contacto</button></a>
                 </div>
             </div>
@@ -237,16 +237,21 @@
     <section class="contacto" id="contacto">
         <h1 class="contacto_text_1">Contacto</h1>
 
-        <form class="form_contact" id='form' method='post' name='contacto-portafolio'><input type='hidden' name='form-name' value='contacto-portafolio' />
+        <!-- API formsubmit,  after .co/ is my email-->
+        <form class="form_contact" action="https://formsubmit.co/0f1bfdb9cbc3276ff8109f04c97ac052" method="POST">
             <p>Completa el formulario y me pondré en contacto contigo lo antes posible.</p>
-            <input id="nombre" type="text" name="name" placeholder="Nombre | Name" required>
-            <input id="email" type="email" name="email" placeholder="E-mail" required>
-            <input id="asunto" type="text" name="affair" placeholder="Asunto | Subject" required>
-            <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje | Message" required></textarea>
-
+            <input type="text" name="name" placeholder="Nombre | Name" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="asunto" placeholder="Asunto | Subject" required>
+            <textarea cols="20" rows="4" name="message" placeholder="Mensaje | Message" required></textarea>
+        
             <div class="btn_form_contacto">
-                <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
+                <button type="submit">Enviar</button>
             </div>
+
+            <!-- options of API formsubmit -->
+            <input type="hidden" name="_next" value="https://alejandrovc6467.github.io/Portafolio/#contacto">
+            <input type="hidden" name="_captcha" value="false">
         </form>
         
     </section>
