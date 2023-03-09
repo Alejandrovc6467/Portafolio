@@ -6,7 +6,8 @@ footer {
     /*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
     text-align: center;
     align-items: center;
-    height: 10vh;
+    justify-content: center;
+    height: 100px;
 }
 
 footer p {
@@ -32,8 +33,7 @@ footer p {
 
 .footer_redes a {
     color: var(--whiteColor-text);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;/**/
     font-size: 11px;
     letter-spacing: 2px;
     text-decoration: none;
@@ -67,7 +67,6 @@ footer p {
     footer {
         flex-flow: column nowrap;
         /*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
-        height: 10vh;
         margin-top: 50px;
     }
 
