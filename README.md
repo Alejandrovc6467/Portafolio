@@ -11,7 +11,7 @@
 
 ---
 
-[**Ir a la página** ✌](https://alejandrovc6467.github.io/Portafolio/)
+[Visita mi sitio web](https://alejandrovc6467.github.io/Portafolio/){:target="_blank"}
 
 
 ---
