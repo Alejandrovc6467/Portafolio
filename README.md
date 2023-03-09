@@ -11,7 +11,9 @@
 
 ---
 
-[Visita mi sitio web](https://alejandrovc6467.github.io/Portafolio/){:target="_blank"}
+[**Ir a la página** ✌](https://alejandrovc6467.github.io/EncriptadorDeTexto/)
+
+[**Visita mi portafolio web**](https://alejandrovc6467.github.io/Portafolio/){:target="_blank"}
 
 
 ---
