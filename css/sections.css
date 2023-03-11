@@ -105,7 +105,8 @@
 }
 
 .cards_formacion{
-    background-color: rgba(0, 0, 0, 0.179);
+    background-color: rgba(0, 0, 0, 0.179);/**/
+    backdrop-filter: blur(100px);
     border-radius: 10px;
     width: 250px;/*25% , 16rem*/
     margin: 10px 20px;
@@ -170,6 +171,7 @@
 
 .cards_proyectos {
     background-color: rgba(0, 0, 0, 0.179);
+    backdrop-filter: blur(100px);
     border-radius: 20px;
     width: 350px;
     height: 400px;
@@ -276,6 +278,7 @@
 
 .form_contact{
     background-color: rgba(0, 0, 0, 0.179);
+    backdrop-filter: blur(100px);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
